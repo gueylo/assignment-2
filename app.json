@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "KGPortfolio",
-    "slug": "KGPortfolio",
+    "slug": "kgportfolio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,16 +10,31 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "rw.ac.ines.reg2527953.kgportfolio",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/icon.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow KGPortfolio to choose a profile photo.",
+          "cameraPermission": "Allow KGPortfolio to take a profile photo.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7839f099-d634-4e28-836c-04a6e73b6af8"
+      }
+    },
+    "owner": "gueylo"
   }
 }
